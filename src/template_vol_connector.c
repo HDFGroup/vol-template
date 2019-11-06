@@ -18,12 +18,8 @@
 /* This connector's header */
 #include "template_vol_connector.h"
 
-/* Public HDF5 header */
-#include "hdf5.h"
-
-/* For HDF5 plugin functionality */
-#include "H5PLextern.h"
-
+#include <hdf5.h>
+#include <H5PLextern.h>
 #include <stdlib.h>
 
 /* The VOL class struct */
@@ -115,6 +111,12 @@ static const H5VL_class_t template_class_g = {
         NULL,                                       /* specific     */
         NULL,                                       /* optional     */
         NULL                                        /* free         */
+    },
+    {   /* blob_cls */
+        NULL,                                       /* put          */
+        NULL,                                       /* get          */
+        NULL,                                       /* specific     */
+        NULL                                        /* optional     */
     },
     NULL                                            /* optional     */
 };

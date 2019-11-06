@@ -50,4 +50,5 @@ rm -f bin/depcomp
 
 echo "Remove remaining generated files"
 rm -f aclocal.m4
+rm -f config.h.in
 

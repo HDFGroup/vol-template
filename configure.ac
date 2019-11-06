@@ -43,6 +43,10 @@ if test "$with_hdf5" = "no"; then
 fi
 
 AC_CONFIG_FILES([Makefile
-                 src/Makefile])
+                 src/Makefile
+                 test/Makefile])
+
+AC_CONFIG_FILES([test/test_vol_plugin.sh],
+                [chmod +x test/test_vol_plugin.sh])
 
 AC_OUTPUT

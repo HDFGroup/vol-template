@@ -1,7 +1,5 @@
 # HDF5 VOL connector template
 
-**NOTE: This is a work in progress. It should be complete when HDF5 1.12.0 is released in late 2019.**
-
 This is a template for creating an HDF5 virtual object layer (VOL) connector.
 
 Copy this code into your own repository and modify the source, test, and build files as needed to implement your own functionality.
@@ -18,10 +16,7 @@ https://bitbucket.hdfgroup.org/projects/HDF5VOL/repos/berkeley-db/browse
 You will need a few things to build the code in this repository:
 
 * HDF5 1.12.0 or later
-* CMake or the Autotools
-
-The autotools don't do anything fancy, so any reasonably recent version should work. The configure.ac file explicitly requires autoconf 2.69 (from 2012) and automake, etc. from about that time on should be fine.
-
+* CMake (3.9 or later) or the Autotools (autoconf 2.69 or later and matching automake, etc.)
 
 ### Autotools Builds
 

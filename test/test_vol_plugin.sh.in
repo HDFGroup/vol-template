@@ -12,7 +12,6 @@
 #
 # This shell script is for testing VOL connector plugins.
 #
-srcdir=@srcdir@
 ABS_TOP_BUILDDIR=@abs_top_builddir@
 ABS_BUILDDIR=@abs_builddir@
 

@@ -293,8 +293,16 @@ int
 main(void)
 {
     int nerrors = 0;
+    char *path = NULL;
 
     puts("Testing VOL connector plugin functionality.");
+
+    path = getenv("HDF5_PLUGIN_PATH");
+    printf("HDF5_PLUGIN_PATH = ");
+    if (path)
+        printf("%s\n", path);
+    else
+        printf("NULL\n");
 
     nerrors += test_registration_by_name() < 0          ? 1 : 0;
     nerrors += test_registration_by_value() < 0         ? 1 : 0;

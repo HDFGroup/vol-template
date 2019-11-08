@@ -32,3 +32,9 @@ The autotools don't do anything fancy, so any reasonably recent version should w
 3) Once configured, you should be able to make and build. Switching to the test directory and running 'make check' will run the test script.
 
 ### CMake Builds
+
+1) Run ccmake or the CMake GUI and point it at a VOL-enabled HDF5 installation. You may need to switch to "advanced mode" to see all the options. Configure and generate.
+
+2) Build the software using 'make', etc.
+
+3) Run the test program using 'make test', 'ctest .', etc.

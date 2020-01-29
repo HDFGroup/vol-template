@@ -104,6 +104,10 @@ static const H5VL_class_t template_class_g = {
         NULL,                                       /* specific     */
         NULL                                        /* optional     */
     },
+    {   /* introscpect_cls */
+        NULL,                                       /* get_conn_cls */
+        NULL                                        /* opt_query    */
+    },
     {   /* request_cls */
         NULL,                                       /* wait         */
         NULL,                                       /* notify       */
@@ -117,6 +121,11 @@ static const H5VL_class_t template_class_g = {
         NULL,                                       /* get          */
         NULL,                                       /* specific     */
         NULL                                        /* optional     */
+    },
+    {   /* token_cls */
+        NULL,                                       /* cmp          */
+        NULL,                                       /* to_str       */
+        NULL                                        /* from_str     */
     },
     NULL                                            /* optional     */
 };

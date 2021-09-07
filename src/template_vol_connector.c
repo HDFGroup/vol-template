@@ -24,12 +24,13 @@
 
 /* The VOL class struct */
 static const H5VL_class_t template_class_g = {
-    0,                                              /* version      */
-    TEMPLATE_VOL_CONNECTOR_VALUE,                   /* value        */
-    TEMPLATE_VOL_CONNECTOR_NAME,                    /* name         */
-    0,                                              /* capability flags */
-    NULL,                                           /* initialize   */
-    NULL,                                           /* terminate    */
+    2,                                              /* VOL class struct version */
+    TEMPLATE_VOL_CONNECTOR_VALUE,                   /* value                    */
+    TEMPLATE_VOL_CONNECTOR_NAME,                    /* name                     */
+    1,                                              /* version                  */
+    0,                                              /* capability flags         */
+    NULL,                                           /* initialize               */
+    NULL,                                           /* terminate                */
     {   /* info_cls */
         (size_t)0,                                  /* size    */
         NULL,                                       /* copy    */
@@ -105,8 +106,9 @@ static const H5VL_class_t template_class_g = {
         NULL                                        /* optional     */
     },
     {   /* introscpect_cls */
-        NULL,                                       /* get_conn_cls */
-        NULL                                        /* opt_query    */
+        NULL,                                       /* get_conn_cls  */
+        NULL,                                       /* get_cap_flags */
+        NULL                                        /* opt_query     */
     },
     {   /* request_cls */
         NULL,                                       /* wait         */

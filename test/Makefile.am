@@ -12,5 +12,4 @@ vol_plugin_LDADD = $(HDF5_LIBS)
 
 TESTS = test_vol_plugin.sh
 
-# This doesn't seem to work with make distclean?
 DISTCLEANFILES = test_vol_plugin.sh

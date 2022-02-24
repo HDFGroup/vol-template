@@ -20,9 +20,9 @@ You will need a few things to build the code in this repository:
 
 1) The first thing you need to do is run the autogen.sh script located in the source root. This will run the autotools and generate the build files.
 
-2) Next, switch to your build directory and run configure. You might need to specify the path to a VOL-enabled HDF5 (version 1.13.0 or later) using the --with-hdf5 option. Oddly, --with-hdf5 needs you to point to the h5cc file. This will be improved in the future.
+2) Next, switch to your build directory and run configure. You might need to specify the path to a VOL-enabled HDF5 (version 1.13.0 or later) using the --with-hdf5 option. Note that --with-hdf5 needs you to specify the path to the (p)h5cc file (including h5cc).
 
-3) Once configured, you should be able to make and build. Switching to the test directory and running 'make check' will run the test script.
+3) Once configured, you should be able to run make to build the template. Running 'make check' will build the test program and run the test script. The test script and associated program simply make sure that the VOL connector can be registered and loaded dynamically.
 
 ### CMake Builds
 

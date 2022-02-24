@@ -258,7 +258,7 @@ test_getters(void)
     if((vol_id = H5VLregister_connector_by_name(TEMPLATE_VOL_CONNECTOR_NAME, H5P_DEFAULT)) < 0)
         TEST_ERROR;
 
-    /* Get the connector's ID */
+    /* Get the connector's ID by name */
     if((vol_id_out = H5VLget_connector_id_by_name(TEMPLATE_VOL_CONNECTOR_NAME)) < 0)
         TEST_ERROR;
     if(vol_id != vol_id_out)

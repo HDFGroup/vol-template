@@ -2,7 +2,7 @@
 
 This is a template for creating an HDF5 virtual object layer (VOL) connector.
 
-Copy this code into your own repository and modify the source, test, and build files as needed to implement your own functionality.
+Copy this code into your own repository and modify the source, test, and build files as needed to implement your own functionality. This repository is listed as a template on github, so you should be able to rename it appropriately when you fork it (don't forget to change the VOL name and value, though).
 
 The code included in the source directory builds an "empty" VOL connector which has no functionality aside from being capable of registration. Although lacking as a "real" VOL connector, this shell can still serve as a useful test of whether dynamic plugin loading is working.
 

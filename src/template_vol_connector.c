@@ -24,7 +24,7 @@
 
 /* The VOL class struct */
 static const H5VL_class_t template_class_g = {
-    2,                                              /* VOL class struct version */
+    3,                                              /* VOL class struct version */
     TEMPLATE_VOL_CONNECTOR_VALUE,                   /* value                    */
     TEMPLATE_VOL_CONNECTOR_NAME,                    /* name                     */
     1,                                              /* version                  */
